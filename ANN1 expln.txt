@@ -1,0 +1,21 @@
+import numpy as np: This line imports the NumPy library and assigns it the alias np. NumPy is a powerful library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently
+
+import matplotlib.pyplot as plt: Matplotlib is a plotting library for Python that provides a wide range of functions and tools for creating various types of plots, charts, and visualizations
+
+*plt.figure(figsize=(8,4)): This line creates a new figure object with a specific size (width, height)
+*def Sigmoid(t): This line defines a function named Sigmoid that takes a parameter t. The function calculates the sigmoid activation using the formula 1 / (1 + exp(-t)) and returns the result
+*t = np.linspace(-5, 5): This line generates an array of evenly spaced numbers from -5 to 5 using NumPy's linspace function. By default, linspace creates an array of 50 element
+*plt.plot(t, Sigmoid(t)): This line plots the sigmoid activation function by calling the plot function from Matplotlib.pyplot. It takes the t array as the x-values and Sigmoid(t) as the y-values. This will create a line plot of the sigmoid function
+plt.title('Sigmoid Activation Function') : To give title
+lt.show() : show graph
+
+plt.figure(figsize=(8,4)): This line creates a new figure object with a specific size
+def RectifiedLinearUnit(t): This line defines a function named RectifiedLinearUnit that takes a parameter t. The function creates an empty list lst and then iterates over the elements of t. For each element, if it is greater than or equal to 0, it appends the element to the lst, otherwise, it appends 0. 
+rr = np.linspace(-5, 5): This line generates an array of evenly spaced numbers from -5 to 5 using NumPy's linspace
+plt.plot(arr, RectifiedLinearUnit(arr)): This line plots the Rectified Linear Unit (ReLU) activation function by calling the plot function from Matplotlib.pyplot. It takes the arr array as the x-values and RectifiedLinearUnit(arr) 
+
+
+def Linear(x): This line defines a function named Linear that takes a parameter x. The function simply returns the input value x itself, representing a linear relationship between the input and output
+plt.plot(x,Linear(x)): This line plots the linear activation function by calling the plot function from Matplotlib.pyplot. It takes the x array as the x-values and Linear(x) as the y-values. This will create a line plot with a straight line representing the linear function
+
+Overall, this code generates a plot of the linear activation function and displays it using Matplotlib. The linear function simply returns the input value as the output, representing a straight line with a slope of 1
